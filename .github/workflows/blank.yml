@@ -26,4 +26,4 @@ jobs:
       name: Test
     steps:
       - name: Hello
-        run: echo Hello from test env.
+        run: echo Hello from test env. ${{ secrets.MESSAGE }}
