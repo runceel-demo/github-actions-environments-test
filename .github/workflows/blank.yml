@@ -37,6 +37,7 @@ jobs:
 
   for_test_env:
     runs-on: ubuntu-latest
+    needs: build
     environment:
       name: Test
     steps:
