@@ -34,3 +34,11 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+  for_test_env:
+    runs-on: ubuntu-latest
+    environment:
+      name: Test
+    steps:
+      - name: Hello
+        run: echo Hello from test env.
